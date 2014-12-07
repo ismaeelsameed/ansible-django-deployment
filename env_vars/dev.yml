@@ -43,8 +43,8 @@ smtp_password: mypassword
 
 
 # Application settings.
-django_settings_file: settings.production
-django_secret_key: akr2icmg1n8%z^3fe3c+)5d0(t^cy-2_25rrl35a7@!scna^1#
+django_settings_file: molPortal
+django_secret_key: +2qyhjgx@5kf&g)^x^^ked2h1(%jr58f5b!*gv^&7)k)#4-9+5
 
 run_django_syncdb: yes
 run_django_south_migration: yes

@@ -1,9 +1,9 @@
 ---
 
-git_repo: https://github.com/ismaeelsameed/sameedo.git
+git_repo: ssh://git@github.com/doroob-edx/portal.git
 
-project_name: sameedo
-application_name: sameedo
+project_name: portal
+application_name: doroob
 
 ssl_dest_dir: /etc/ssl
 
