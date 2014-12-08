@@ -43,7 +43,7 @@ smtp_password: mypassword
 
 
 # Application settings.
-django_settings_file: molPortal.settings_dev
+django_settings_file: molPortal.settings_qa
 django_secret_key: +2qyhjgx@5kf&g)^x^^ked2h1(%jr58f5b!*gv^&7)k)#4-9+5
 
 run_django_syncdb: yes

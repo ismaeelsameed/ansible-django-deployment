@@ -3,7 +3,7 @@
   hosts: all
   sudo: yes
   sudo_user: root
-  remote_user: ansible
+  remote_user: ubuntu
   vars:
     - setup_git_repo: yes
     - update_apt_cache: yes
@@ -13,6 +13,4 @@
 
   roles:
     - base
-#    - db
     - web
-#    - memcached
