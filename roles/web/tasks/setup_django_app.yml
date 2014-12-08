@@ -5,6 +5,12 @@
 - name: Install packages required by the Django app inside virtualenv
   pip: virtualenv={{ virtualenv_path }} requirements={{ requirements_file }}
 
+- name: create log directory
+  file: path=/home/ubuntu/logs state=directory
+
+- name: create log file
+  file: path=/home/ubuntu/logs/log.log state=touch
+
 - name: Run the Django syncdb command
   django_manage:
     command: syncdb

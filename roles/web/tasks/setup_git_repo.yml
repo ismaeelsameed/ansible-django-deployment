@@ -1,14 +1,14 @@
 ---
 - name: creates .ssh directory
-  file: path=/home/ansible/.ssh state=directory owner=ansible
+  file: path=/home/ubuntu/.ssh state=directory owner=ubuntu
 
 - name: upload private key to remote deploy user
-  copy: src=~/.ssh/id_rsa_servers dest=/home/ansible/.ssh/id_rsa mode=0600 owner=ansible
+  copy: src=~/.ssh/id_rsa_servers dest=/home/ubuntu/.ssh/id_rsa mode=0600 owner=ubuntu
 
 - name: upload public key to remote deploy user
-  copy: src=~/.ssh/id_rsa_servers.pub dest=/home/ansible/.ssh/id_rsa.pub owner=ansible
+  copy: src=~/.ssh/id_rsa_servers.pub dest=/home/ubuntu/.ssh/id_rsa.pub owner=ubuntu
 
 - name: Setup the Git repo
-  git: repo={{ git_repo }} dest={{ project_path }} key_file=/home/ansible/.ssh/id_rsa accept_hostkey=yes
+  git: repo={{ git_repo }} dest={{ project_path }} key_file=/home/ubuntu/.ssh/id_rsa accept_hostkey=yes
   when: setup_git_repo
   tags: git
