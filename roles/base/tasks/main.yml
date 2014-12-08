@@ -20,6 +20,10 @@
     - python-pip
     - python-pycurl
     - supervisor
+    - libmysqlclient-dev
+    - libxml2-dev
+    - libxslt1-dev
+    - libffi-dev
   tags: packages
 
 - name: Install newrelic

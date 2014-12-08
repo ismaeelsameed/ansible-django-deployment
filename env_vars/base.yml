@@ -4,6 +4,7 @@ git_repo: ssh://git@github.com/doroob-edx/portal.git
 
 project_name: portal
 application_name: doroob
+wsgi_application: molPortal
 
 ssl_dest_dir: /etc/ssl
 

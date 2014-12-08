@@ -6,7 +6,7 @@
   remote_user: ansible
   vars:
     - setup_git_repo: yes
-    - update_apt_cache: no
+    - update_apt_cache: yes
   vars_files:
     - env_vars/base.yml
     - env_vars/dev.yml

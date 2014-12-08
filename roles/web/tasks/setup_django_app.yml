@@ -1,6 +1,6 @@
 ---
 - name: install pil from external resource
-  pip: name='pil --allow-unverified PIL --allow-all-external'
+  pip: virtualenv={{ virtualenv_path }} name='pil --allow-unverified pil --allow-all-external'
 
 - name: Install packages required by the Django app inside virtualenv
   pip: virtualenv={{ virtualenv_path }} requirements={{ requirements_file }}
